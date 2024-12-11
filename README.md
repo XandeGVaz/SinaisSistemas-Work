@@ -1,4 +1,4 @@
-# SinaisSistemas-Work
+# Trabalho final de Sinais e Sistemas
 
 ## Alunos
 - Vitor Alexandre Garcia Vaz
