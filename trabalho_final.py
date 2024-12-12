@@ -8,7 +8,6 @@
 # Imports
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy
 from scipy.interpolate import interp1d
 import math
 
@@ -140,7 +139,6 @@ plt.grid(True)
 plt.savefig('graficos_plotados/convolucao2.png')
 
 
-
 ## Terceiro exemplo de convolução
 # Definindo as funções f e g
 def f3(t):
@@ -170,8 +168,8 @@ for x in x_values:
 
 # Plotando os resultados
 plt.figure(figsize=(10, 6))
-plt.plot(x_values, [f3(x) for x in x_values], label='$f(x)=e^{x}u(-x)$', color='blue')
-plt.plot(x_values, [g3(x) for x in x_values], label='$f(x)=e^{-x}u(x)$', color = 'orange')
+plt.plot(x_values, [f3(x) for x in x_values], label='$f(x)=e^{0,2x}u(-x)$', color='blue')
+plt.plot(x_values, [g3(x) for x in x_values], label='$f(x)=e^{-0,2x}u(x)$', color = 'orange')
 plt.plot(x_values, conv_values, label='Convolução de f e g', color='#fa19ef')
 plt.xlabel('x')
 plt.ylabel('y(x)')
