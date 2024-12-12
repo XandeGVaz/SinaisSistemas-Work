@@ -33,24 +33,25 @@ def intg_s(a,b,N,f):
 # Convolução de duas funções (f e g)
 def conv(a,b,N,f,g,x):
     
-    ##calcula tamanho das partições
+    ## Calcula tamanho das partições
     h=(b-a)/N 
     
-    ##somatório da fórmula
+    ## Somatório da fórmula
     som=0 
 
     t=np.zeros(N+1)
     t[0]=a
 
-    ## valores de t a cada partição h
+    ## Valores de t a cada partição h
     for k in range(1,N+1):
         t[k]=a+h*k 
     
-    ##cálculo do somatório
+    ## Cálculo do somatório
     for k in range (1,N+1):
         tb=(t[k-1]+t[k])/2
         som += f(t[k-1])*g(x-t[k-1]) + 4*f(tb)*g(x-tb)+ f(t[k])*g(x-t[k]) 
 
+    ## Retorno do resultado da convolução no ponto x
     return ((h/6)*som)
 
 
