@@ -1,8 +1,8 @@
 # Trabalho final de Sinais e Sistemas
 
 ## Alunos
-- Vitor Alexandre Garcia Vaz
-- Pedro Gasparelo Leme
+- Vitor Alexandre Garcia Vaz (14611432)
+- Pedro Gasparelo Leme (14602421)
 
 ## Objetivo
 Neste repositório, visamos apresentar um programa em python, o qual foi feito em grupo e com o objetivo de resolver um problema que aborde a matéria de Sinais e Sistemas.
