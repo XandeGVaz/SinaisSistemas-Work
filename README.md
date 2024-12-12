@@ -10,7 +10,7 @@ Neste repositório, visamos apresentar um programa em python, o qual foi feito e
 ## Problema abordado
 Com base nas possibilidades fornecidas pelo nosso professor Marcos Rogério, escolhemos resolver o problema de elaboração de um programa de plotagem da convoluçaõ entre dois sinais.
 
-## Organização dos códigos
+## Organização do trabalho
 - Código puro (sem maiores explicações) em `trabalho_final.py`
 - Apresentação do código utilizando python para códigos e markdown para explicações em `apresentacao.ipynb`
 - Gráficos plotados em `graficos_plotados`
