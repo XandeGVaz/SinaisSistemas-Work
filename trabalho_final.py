@@ -64,22 +64,28 @@ def g(t):
     return 0
 
 # Parâmetros
-a = -20
-b = 20
-N = 1000
+a = -20         # limite inferior 
+b = 20          # limite superior
+N = 1000        # número de partições
+
+# Definindo os valores de x
 x_values = np.linspace(a, b, N)
 
 # Calculando a convolução para cada valor de x
-conv_values = [conv(a, b, N, f, f, x) for x in x_values]
+i = 0
+conv_values = np.zeros(N)
+for x in x_values:
+    conv_values[i] = conv(a,b,N,f,g,x)
+    i += 1
 
 # Plotando os resultados
 plt.figure(figsize=(10, 6))
-plt.plot(x_values, [f(x) for x in x_values], label='f(t) = $G_5(t)$')
-plt.plot(x_values, [g(x) for x in x_values], label='g(t) = $G_5(t)$')
+plt.plot(x_values, [f(x) for x in x_values], label='f(x) = $G_5(x)$')
+plt.plot(x_values, [g(x) for x in x_values], label='g(x) = $G_5(x)$')
 plt.plot(x_values, conv_values, label='Convolução de f e g')
 plt.xlabel('x')
-plt.ylabel('Amplitude')
-plt.title('Convolução de f e g ( $f(t)*g(t)$ )')
+plt.ylabel('y(x)')
+plt.title('$y(x) = f(x) * g(x)$')
 plt.legend()
 plt.grid(True)
 plt.show()
