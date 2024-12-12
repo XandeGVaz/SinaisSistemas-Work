@@ -12,4 +12,4 @@ Com base nas possibilidades fornecidas pelo nosso professor Marcos Rogério, esc
 
 ## Organização dos códigos
 - Código puro (sem maiores explicações) : `trabalho_final.py`
-- Apresentação do código utilizando python + markdown : `apresentacao.ipynb`
+- Apresentação do código utilizando python para códigos e markdown para explicações: `apresentacao.ipynb`
